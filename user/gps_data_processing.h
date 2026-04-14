@@ -21,7 +21,7 @@ void gcj02_to_gaode_tile(float gcj_lat, float gcj_lon, uint8_t zoom, uint32_t *x
 static uint8_t is_leap_year(uint16_t year);// 判断闰年
 static uint8_t get_days_in_month(uint16_t year, uint8_t month);// 获取当月天数
 void convert_utc_to_beijing(gps_device_t *dev);// UTC 转 北京时间（UTC+8）
-void correct_gps_time(gps_device_t *dev);
+//void correct_gps_time(gps_device_t *dev);
 
 // 滤波函数声明 
 float filter_latitude(float raw_latitude);	// 纬度滤波

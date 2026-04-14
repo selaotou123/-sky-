@@ -1,3 +1,0 @@
---c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\user -I ..\..\board -I ..\..\bsp -I ..\..\libraries\CMSIS\Include -I ..\..\libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\modules
--D__UVISION_VERSION="539" -DSTM32F407xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx
--o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d "..\..\user\main.c"

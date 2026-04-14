@@ -33,7 +33,7 @@ int main()
 				TJCPrintf("show_GPS.txt=\"Yes\"");
 				TJCPrintf("show_GPS_max.txt=\"Yes\"");
 				//时间矫正（加1秒）
-				correct_gps_time(&gps_device);
+				//correct_gps_time(&gps_device);
                 // WGS84 → GCJ-02
                 float gcj_lat, gcj_lon;
                 wgs84_to_gcj02(wgs_lat, wgs_lon, &gcj_lat, &gcj_lon);

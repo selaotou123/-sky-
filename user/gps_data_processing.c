@@ -76,7 +76,7 @@ void convert_utc_to_beijing(gps_device_t *dev)
 /*******************************************************************************
  * @brief  时间矫正
  *******************************************************************************/
-void correct_gps_time(gps_device_t *dev) 
+/*void correct_gps_time(gps_device_t *dev) 
 {
     // GPS接收器通常会返回上一秒的时间（处理延迟）
     // UTC时间 + 1秒
@@ -115,7 +115,7 @@ void correct_gps_time(gps_device_t *dev)
     
     // 重新转换为北京时间
     convert_utc_to_beijing(dev);
-}
+}*/
 
 /*******************************************************************************
  * @brief 判断是否在中国范围外
