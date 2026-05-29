@@ -18,7 +18,7 @@ typedef struct
         bool is_valid;
         bool has_fix;
         
-        // === 新增：UTC 整数字段（关键！）===
+        // UTC 时间
         uint16_t utc_year;   // 如 2024
         uint8_t utc_month;   // 1-12
         uint8_t utc_day;     // 1-31
@@ -38,7 +38,7 @@ typedef struct
         float speed_knots;
         float course_degrees;
         
-        // 北京时间字段（新增）
+        // 北京时间字段（UTC-8）
         uint16_t bj_year;
         uint8_t bj_month;
         uint8_t bj_day;

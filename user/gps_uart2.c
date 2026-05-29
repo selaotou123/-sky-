@@ -76,17 +76,17 @@ void gps_configure_rmc_only(void)
 {
     delay_ms(500);
     
-    const char *cmd_disable_all = "$PCAS03,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0*29\r\n";
+    const char *cmd_disable_all = "$PCAS03,,,,,,,,,,,,,,*02\r\n";
     printf("[GPS] Config: Disable all NMEA outputs\r\n");
     gps_uart2_send_string(cmd_disable_all);
     delay_ms(100);
     
-    const char *cmd_enable_rmc = "$PCAS03,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0*27\r\n";
+    const char *cmd_enable_rmc = "$PCAS03,,,,,1,,,,,,,,,*33\r\n";
     printf("[GPS] Config: Enable RMC only (1Hz)\r\n");
     gps_uart2_send_string(cmd_enable_rmc);
     delay_ms(100);
     
-    const char *cmd_save_config = "$PCAS10,3*1E\r\n";
+    const char *cmd_save_config = "$PCAS10,0*1C\r\n";
     printf("[GPS] Config: Save configuration\r\n");
     gps_uart2_send_string(cmd_save_config);
     delay_ms(100);
